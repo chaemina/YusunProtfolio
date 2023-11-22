@@ -13,7 +13,7 @@ const ExperiencePart = () => {
   return (
     <>
       <div ref={ref} className="w-full flex flex-col space-y-8 opacity-0">
-        <Title className="bold ">Experience</Title>
+        <Title className="bold ">Simple Experience</Title>
         <LoginCard />
       </div>
     </>

@@ -17,8 +17,8 @@ const ImageCard = ({ title, tags, image, githubLink, deployLink }) => {
   return (
     <>
       <div className="w-full">
-        <Card className="h-[300px] mb-20 transition duration-300 ease-in-out transform hover:scale-105">
-          <Title className="text-lg text-sky-900">{title}</Title>
+        <Card className="h-[300px] mb-40 transition duration-300 ease-in-out transform hover:scale-105">
+          <Title className="text-xl font-bold text-sky-900">{title}</Title>
           <div className="flex space-x-2">
             {tags.map((tag) => (
               <Tag key={tag.name} className={getTagColorClass(tag.name)}>
@@ -26,7 +26,11 @@ const ImageCard = ({ title, tags, image, githubLink, deployLink }) => {
               </Tag>
             ))}
           </div>
-          <Image src={image} alt={title} className="max-w-[95%] h-[80%] " />
+          <Image
+            src={image}
+            alt={title}
+            className="max-w-[90%] h-[90%] rounded-xl "
+          />
           <div className="flex">
             <a
               href={githubLink}
